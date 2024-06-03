@@ -11,24 +11,24 @@ h1{
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  height: 450px;
   margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   .next_arr{
     position: absolute;
     top: 50%;
-    left: 100px;
-    transform: translate(-50%,-50%);
+    left: 50px;
+    transform: translate(0 , -50%);
     font-size: 30px;
     border: 2px solid;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     color: white;
     background-color: black;
@@ -42,12 +42,12 @@ h1{
   .prev_arr{
     position: absolute;
     top: 50%;
-    right: 100px;
-    transform: translate(-50%,-50%);
+    right: 50px;
+    transform: translate(0 , -50%);
     font-size: 30px;
     border: 2px solid;
     border-radius: 50%;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
     color: white;
     background-color: black;
@@ -58,9 +58,26 @@ h1{
     }
   }
   .content{
+    max-width: 300px;
+    height:250px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img{
-      max-width: 600px;
-      max-height: 300px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
+}
+@media screen and (max-width:650px) {
+.slider .next_arr {
+  left: 0px;
+  font-size: 20px;
+}
+.slider .prev_arr {
+  right: 0px;
+  font-size: 20px;
+
+}
 }
